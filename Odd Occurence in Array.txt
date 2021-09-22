@@ -1,0 +1,6 @@
+from collections import Counter
+def solution(A):
+    Z =Counter(A)
+    for i in Z:
+        if(Z[i] % 2 != 0):
+            return i
