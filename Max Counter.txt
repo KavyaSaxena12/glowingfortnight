@@ -6,6 +6,6 @@ def solution(N, A):
             counter[A[i]-1]=counter[A[i]-1] + 1
         else:
             maximum=max(counter)
-            counter =[maximum for x in counter]
+            counter =[maximum for x in counter] // or u an use [maximum]*N
 
     return counter
