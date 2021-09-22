@@ -1,0 +1,8 @@
+def solution(X, Y, D):
+    diff = Y-X
+    min_jumps = diff / D
+    if(min_jumps > 0):
+        jumps =int(min_jumps)+1
+    return jumps
+    # write your code in Python 3.6
+    pass
