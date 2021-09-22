@@ -1,0 +1,17 @@
+FrogRiverone:
+
+
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def solution(X, A):
+    # write your code in Python 3.6
+    new_A = set()
+    for i in range(len(A)):
+        if(A[i] not in new_A):
+            new_A.add(A[i])
+        if(len(new_A) == X):
+            return i
+
+    if(X < 0 or len(new_A) != X):
+        return -1
