@@ -1,0 +1,24 @@
+def solution(N):  
+  binarynum = bin(N).replace("0b","") 
+  array_bin=[]    
+  length_bin =len(binarynum)   
+  one =0 
+  zero =0    
+  new_zero=0    
+  lengthstr=0    
+  for i in binarynum:    
+    array_bin.append(i)   
+    lengtharr = len(array_bin)    
+    for j in range(lengtharr):        
+    if(array_bin[j] == '1'):            
+        one=one+1           
+        new_zero=zero
+        zero=0        
+     elif(array_bin[j] == '0'):     
+       zero=zero+1            
+	if(new_zero <zero):                
+		lengthstr = zero    
+		if lengthstr > new_zero and one >=2:       
+ 			return lengthstr 
+		else:       
+		 return 0
