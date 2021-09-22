@@ -1,0 +1,35 @@
+A =[0,1,2,3,4]
+
+
+   
+ # write your code in Python 3.6
+
+len_arr=len(A)
+
+divison=len_arr-1
+
+a1=[]
+
+a2=[]
+
+least=[]
+
+for i in range(divison):
+
+  a1 = A[i+1:]
+ 
+ sum_a1= sum(a1)
+ 
+ a2=A[:i+1]
+ 
+ sum_a2 =sum(a2)
+ 
+ diff = abs(sum_a2-sum_a1)
+ 
+ least.append(diff)
+
+least.sort()
+
+min_value =least[0]
+
+print(min_value)
