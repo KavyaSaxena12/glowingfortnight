@@ -1,0 +1,15 @@
+Permutation :
+
+
+
+def solution(A):
+    len_A=len(A)
+    maxele =0
+    new_A=set()
+    for i in range(len_A):
+        new_A.add(A[i])
+        maxele = max(maxele,A[i])
+    if(len(new_A) == len_A and maxele == len_A):
+        return(1)
+    else:
+        return(0)
