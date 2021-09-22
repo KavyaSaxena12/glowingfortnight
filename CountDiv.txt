@@ -1,0 +1,8 @@
+##CountDiv:
+
+import math
+def solution(A, B, K):
+    X1=math.floor((A-1)/K)
+    X2=math.floor(B/K)
+    Ans=X2-X1
+    return Ans
